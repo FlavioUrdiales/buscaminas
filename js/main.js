@@ -2,6 +2,9 @@ let $final = false;
 let contador = 0;
 
 function init() {
+
+
+   
    $("#elegirNivel").change(buscaminasGui.iniciarJuego);
    $("#reiniciar").click(buscaminasGui.reiniciar);
 };
@@ -14,6 +17,10 @@ function personalizado () {
 
    $("#btn2").css({
       "display":"none"
+   });
+
+   $("#Perzonalizar").css({
+      "display": "none"
    });
 
    buscaminas.pedirNivel('personalizado');
@@ -40,6 +47,11 @@ let buscaminasGui = {
       $("#elegirNivel").css({
          "display":"none"
       });
+
+      $("#Perzonalizar").css({
+         "display": "none"
+      });
+      
       buscaminas.pedirNivel($(this).val());
       buscaminasGui.generarTablero();
    },
