@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <title>Flavio Urdiales | BUSCA MINAS</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/buscaminas.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <noscript>Error, el javascript esta deshabilitado</noscript>
+  <div id="todo">
+    <div id="manejo">
+      <div id="titulo">
+        <h1><b style = "color: black;">BUSCAMINAS</b></h1>
+      </div>
+      
+ 
+
+      
+ 
+    </div>
+    <div id="muestraFinal">
+      <h1 id="textoFinal"></h1>
+    </div>
+    <select  name="nivel" id="elegirNivel">
+      <option value="Elige la dificultad">Elige la dificultad</option>
+      <option value="novato">Fácil</option>
+      <option value="principiante">Principiante</option>
+      <option value="intermedio">Intermedio</option>
+      <option value="avanzado">Avanzado</option>
+    </select>
+   
+
+
+
+
+  </div>
+
+  <div id='btn'> 
+    
+    <button  class = 'btn btn-succes'id="reiniciar">Jugar</button>
+    
+    <button  class = 'btn btn-succes b1'id="Perzonalizar" onclick="crearPersonalizado();">Perzonalizar</button>
+  </div>
+    <div id='btn2' hidden> 
+
+    <b class='b1' for="filas" name="txtFilas" >Filas</b>
+    <input type="number" id="filas" name="filas" min="3" max="15" >
+    <label for="columnas" name="txtColumnas" >Columnas</label>
+    <input type="number" id="columnas" name="columnas" min="3" max="15" >
+    <label for="minas" name="txtMinas" >Minas</label>
+  
+    <input type="number" id="minas" name="minas" min="5" max="50" >
+    <button  class = 'btn btn-succes b1' onclick="personalizado();">Crear</button>
+  
+  
+  </div>
+   
+    <div id="tablero">
+      
+    </div>
+  </div>
+
+</body>
+
+</html>
